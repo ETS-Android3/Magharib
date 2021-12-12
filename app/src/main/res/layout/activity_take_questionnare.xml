@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Traveler.TakeQuestionnaireActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/dp15"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/dp10"
+            android:text="@string/skip_for_now"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="@dimen/dp50"
+        android:layout_marginTop="@dimen/dp50"
+        android:layout_marginEnd="@dimen/dp50"
+        android:src="@drawable/image_take_questionnare" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp50"
+        android:gravity="center"
+        android:text="@string/city_taste"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/sp28" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_take_questionnare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp60"
+        android:layout_marginTop="@dimen/dp60"
+        android:layout_marginEnd="@dimen/dp60"
+        android:background="@drawable/shape_btn"
+        android:text="@string/take_the_questionnare"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp20" />
+
+</LinearLayout>

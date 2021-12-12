@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_booking_request"
+        android:background="#D1D1D1"
+        android:layout_marginStart="@dimen/dp15"
+        android:layout_marginEnd="@dimen/dp15"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_name_booking_request"
+        android:layout_width="wrap_content"
+        android:padding="@dimen/dp10"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp4"
+        android:layout_marginEnd="@dimen/dp15"
+        android:layout_marginBottom="@dimen/dp4"
+        android:text="Abdullah alabullah"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp20" />
+
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp10"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp4"
+        android:layout_marginBottom="@dimen/dp4"
+        android:layout_marginEnd="@dimen/dp15"
+        android:text="Dammam"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/sp20" />
+
+
+</LinearLayout>

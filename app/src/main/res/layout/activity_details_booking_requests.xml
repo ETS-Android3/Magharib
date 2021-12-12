@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffbd1"
+    android:orientation="vertical"
+    tools:context=".Host.DetailsBookingRequestsActivity">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp"
+        android:src="@drawable/ic_back" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/image_report"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_margin="@dimen/dp20"
+                    android:background="?attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/image_flag" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="120dp"
+                    android:layout_height="@dimen/dp150"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/image_profile" />
+
+            </FrameLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginEnd="@dimen/dp10"
+                android:gravity="center"
+                android:text="Hamad Alamri"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/sp22" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp4"
+                android:layout_marginEnd="@dimen/dp10"
+                android:gravity="center"
+                android:text="Booking Request"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/sp16"
+                android:textStyle="italic" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_information_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp15"
+                android:layout_marginEnd="@dimen/dp10"
+                android:gravity="center"
+                android:text="Hamad alamri, Riyadh, 19 years old"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/sp20" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_name_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp4"
+                android:layout_marginEnd="@dimen/dp10"
+                android:gravity="center"
+                android:text="name experience"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/sp20" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_type_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp4"
+                android:layout_marginEnd="@dimen/dp10"
+                android:gravity="center"
+                android:text="type experience"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/sp20" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp4"
+                android:layout_marginEnd="@dimen/dp10"
+                android:gravity="center"
+                android:text="10/11/2021 - 18/11/2021"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/sp20" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_approve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp60"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginEnd="@dimen/dp60"
+                android:background="@drawable/shape_btn"
+                android:text="@string/approve"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp20" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_deny"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp60"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginEnd="@dimen/dp60"
+                android:background="@drawable/shape_btn"
+                android:text="@string/deny"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp20" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

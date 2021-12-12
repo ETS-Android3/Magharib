@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Traveler.StartJourneyActivity">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginStart="@dimen/dp50"
+        android:layout_marginTop="@dimen/dp50"
+        android:layout_marginEnd="@dimen/dp50"
+        android:src="@drawable/logo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp50"
+        android:gravity="center"
+        android:text="@string/thank_you_your_time"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/sp28" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_start_journey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp60"
+        android:layout_marginTop="@dimen/dp60"
+        android:layout_marginEnd="@dimen/dp60"
+        android:background="@drawable/shape_btn"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp20" />
+
+</LinearLayout>

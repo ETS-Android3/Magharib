@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffbd1"
+    android:orientation="vertical"
+    tools:context=".Admin.HostTravelerRequestsActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp"
+        android:src="@drawable/ic_back" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginEnd="@dimen/dp20"
+        android:text="@string/host_traveler_requests"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/sp22" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp50"
+        android:layout_marginEnd="@dimen/dp20"
+        android:text="Omar Nwa"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/sp22" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_account_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp20"
+        android:text="Host Request"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/sp22"
+        android:textStyle="italic" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp50"
+        android:layout_marginEnd="@dimen/dp20"
+        android:gravity="center"
+        android:text="30 years old"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/sp22" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp20"
+        android:text="@string/email2"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/sp22" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_user_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp20"
+        android:text="omarnwa@gmail.com"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/sp22" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/dp20"
+        android:background="#a6a6a6" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_approve_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp60"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginEnd="@dimen/dp60"
+        android:layout_marginBottom="@dimen/sp20"
+        android:background="@drawable/shape_btn"
+        android:text="@string/approve"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp20" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_deny_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp60"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginEnd="@dimen/dp60"
+        android:background="@drawable/shape_btn"
+        android:text="@string/deny"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp20" />
+
+</LinearLayout>

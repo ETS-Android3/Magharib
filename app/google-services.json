@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "606458857948",
+    "project_id": "magharib-9a689",
+    "storage_bucket": "magharib-9a689.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606458857948:android:22f9cd7df58d9b1a882719",
+        "android_client_info": {
+          "package_name": "com.app.magharib"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606458857948-totbccaqhoca1kctin37oslob2o2dds7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN_iA-kzkWDNchhHM-S0wIM49vn-9abRk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "606458857948-totbccaqhoca1kctin37oslob2o2dds7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffbd1"
+    android:orientation="vertical"
+    tools:context=".Admin.ReportsActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp"
+        android:src="@drawable/ic_back" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginEnd="@dimen/dp20"
+        android:text="@string/reports"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/sp22" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_user_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp80"
+        android:layout_marginEnd="@dimen/dp20"
+        android:text="Mohammad9@gmail.com"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/sp22" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_user_email_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp20"
+        android:text="From: suaad99@gmail.com"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/sp22"
+        android:textStyle="italic" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp50"
+        android:layout_marginEnd="@dimen/dp20"
+        android:gravity="center"
+        android:text="This user has wrote hateful comments on my experience page and its not the first time this happens!!"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/sp22" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#a6a6a6"
+        android:layout_margin="@dimen/dp20"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_delete_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp60"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginEnd="@dimen/dp60"
+        android:layout_marginBottom="@dimen/sp20"
+        android:background="@drawable/shape_btn"
+        android:text="@string/delete_comment"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp20" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_disable_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp60"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginEnd="@dimen/dp60"
+        android:background="@drawable/shape_btn"
+        android:text="@string/disable_user"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp20" />
+
+</LinearLayout>

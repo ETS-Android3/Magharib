@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.magharib">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.Magharib"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Host.HistoryDetails2Activity"></activity>
+        <activity android:name=".Traveler.HistoryDetailsActivity"/>
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".Admin.HostTravelerRequestsActivity" />
+        <activity android:name=".Admin.ExperienceRequestsActivity" />
+        <activity android:name=".Admin.StatusAdminActivity" />
+        <activity android:name=".Admin.ReportsActivity" />
+        <activity android:name=".Admin.MainAdminActivity" />
+        <activity android:name=".Host.ExperienceDetailsActivity" />
+        <activity android:name=".Host.AddExperienecDetailsActivity" />
+        <activity android:name=".Host.CreateExperienceActivity" />
+        <activity android:name=".Host.StatusBookingRequestsActivity" />
+        <activity android:name=".Host.DetailsBookingRequestsActivity" />
+        <activity android:name=".Host.BookingRequestsActivity" />
+        <activity android:name=".Host.MainHostActivity" />
+        <activity android:name=".Host.UpdateExperienecDetailsActivity" />
+        <activity android:name=".Traveler.BookingDetailsActivity" />
+        <activity android:name=".Traveler.BookPlaceActivity" />
+        <activity android:name=".Traveler.DetailsPlacesActivity" />
+        <activity android:name=".Traveler.PlacesActivity" />
+        <activity android:name=".Traveler.ExperienceActivity" />
+        <activity android:name=".Traveler.DestinationActivity" />
+        <activity android:name=".Traveler.Questionnaire2Activity" />
+        <activity android:name=".Traveler.MainTravelerActivity" />
+        <activity android:name=".Traveler.StartJourneyActivity" />
+        <activity android:name=".Traveler.QuestionnaireActivity" />
+        <activity android:name=".Traveler.TakeQuestionnaireActivity" />
+        <activity android:name=".Traveler.WelcomeActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".WayToSignActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

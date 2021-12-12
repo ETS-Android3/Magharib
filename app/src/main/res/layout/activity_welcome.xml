@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Traveler.WelcomeActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/dp15"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/dp10"
+            android:text="@string/Skip"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+    </FrameLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicator"
+        android:layout_margin="@dimen/dp20"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp20"
+        android:layout_gravity="center"
+        app:ci_drawable="@drawable/shape_radius_active"
+        app:ci_drawable_unselected="@drawable/shape_radius" />
+
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dp10">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_email_reports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp10"
+        android:gravity="center"
+        android:text="Mohammad9@gmail.com"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/sp20" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_txt_reports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp10"
+        android:text="This user has wrote hateful comm Mohammad9@gmail.com.."
+        android:textColor="@color/orange"
+        android:textSize="@dimen/sp20" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp4"
+        android:layout_marginEnd="@dimen/dp10">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@drawable/shape_btn"
+            android:text="@string/view"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.MainAdminActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dp80"
+                    android:layout_height="@dimen/dp80"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp10"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/image_profile" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name : Admin"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_user_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:text="admin@admin.com"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="160dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/shape_view" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_log_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dp15"
+                android:background="?attr/selectableItemBackground"
+                android:drawableStart="@drawable/ic_logout"
+                android:drawablePadding="@dimen/dp15"
+                android:paddingStart="@dimen/dp30"
+                android:paddingTop="@dimen/dp10"
+                android:paddingEnd="@dimen/dp30"
+                android:paddingBottom="@dimen/dp10"
+                android:text="Logout"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/sp18" />
+
+            <View
+                android:layout_width="160dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dp15"
+                android:background="@drawable/shape_view" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp15"
+                android:layout_marginEnd="@dimen/dp15"
+                android:text="@string/Reports"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/sp22" />
+
+            <ProgressBar
+                android:id="@+id/pb_reports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp10" />
+
+
+            <TextView
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginStart="@dimen/dp15"
+                android:layout_marginEnd="@dimen/dp15"
+                android:id="@+id/tv_reports_empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fffbd1"
+                android:gravity="center"
+                android:padding="@dimen/dp20"
+                android:text="@string/Reports_empty"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/dp20"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_reports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp15"
+                android:layout_marginEnd="@dimen/dp15"
+                android:background="#fffbd1"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"
+                android:visibility="gone" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp15"
+                android:layout_marginEnd="@dimen/dp15"
+                android:text="@string/host_experience_requests"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/sp22" />
+
+            <ProgressBar
+                android:id="@+id/pb_experience_requests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp10" />
+
+
+            <TextView
+                android:layout_marginStart="@dimen/dp15"
+                android:layout_marginEnd="@dimen/dp15"
+                android:id="@+id/tv_experience_requests_empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="#fffbd1"
+                android:gravity="center"
+                android:padding="@dimen/dp20"
+                android:text="@string/experience_requests_are_empty"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/dp20"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_experience_requests"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginEnd="@dimen/dp15"
+                android:background="#fffbd1"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp15"
+                android:layout_marginEnd="@dimen/dp15"
+                android:text="@string/host_traveler_requests"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/sp22" />
+
+
+            <ProgressBar
+                android:id="@+id/pb_host_traveler_requests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp10" />
+
+            <TextView
+                android:layout_marginStart="@dimen/dp15"
+                android:layout_marginEnd="@dimen/dp15"
+                android:id="@+id/tv_host_traveler_empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="#fffbd1"
+                android:gravity="center"
+                android:padding="@dimen/dp20"
+                android:text="@string/host_traveler_requests_are_empty"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/dp20"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_host"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp15"
+                android:background="#fffbd1"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

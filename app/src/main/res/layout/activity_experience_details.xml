@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Host.ExperienceDetailsActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp"
+        android:src="@drawable/ic_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginEnd="@dimen/dp20"
+                android:text="@string/view_experience"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/sp22" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp10">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/image_experience"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/image_places" />
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/avi_Loading"
+                    style="@style/AVLoadingIndicatorView"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    app:indicatorColor="#2b59a2"
+                    app:indicatorName="BallScaleMultipleIndicator" />
+
+            </FrameLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp8"
+                android:layout_marginEnd="@dimen/dp20"
+                android:text="@string/name"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/sp20" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_name_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp8"
+                android:layout_marginEnd="@dimen/dp20"
+                android:text="Surffing in Saudi Arabia"
+                android:textColor="#2b59a2"
+                android:textSize="@dimen/sp20" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp8"
+                android:layout_marginEnd="@dimen/dp20"
+                android:text="@string/location"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/sp20" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tv_location_experience"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp8"
+                android:layout_marginEnd="@dimen/dp20"
+                android:text="Riyadh"
+                android:textColor="#2b59a2"
+                android:textSize="@dimen/sp20" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp8"
+                android:layout_marginEnd="@dimen/dp20"
+                android:text="@string/price"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/sp20" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp20"
+                android:id="@+id/tv_price_experience"
+                android:layout_marginTop="@dimen/dp8"
+                android:layout_marginEnd="@dimen/dp20"
+                android:text="200 SAR"
+                android:textColor="#2b59a2"
+                android:textSize="@dimen/sp20" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp8"
+                android:layout_marginEnd="@dimen/dp20"
+                android:text="@string/details"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/sp20" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp8"
+                android:layout_marginEnd="@dimen/dp20"
+                android:id="@+id/tv_details_experience"
+                android:text="There is a parking lot for car owners. The hotel has non-smoking rooms. There is a garden next to the hotel. With any questions you might have, you can go to the round-the-clock reception desk. It is possible to use these types of payment cards"
+                android:textColor="#2b59a2"
+                android:textSize="@dimen/sp20" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp8"
+                android:layout_marginEnd="@dimen/dp20"
+                android:text="@string/contact_details"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/sp20" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp8"
+                android:layout_marginEnd="@dimen/dp20"
+                android:text="0555071601"
+                android:id="@+id/tv_phone_experience"
+                android:textColor="#2b59a2"
+                android:textSize="@dimen/sp20" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp8"
+                android:layout_marginEnd="@dimen/dp20"
+                android:id="@+id/tv_email_experience"
+                android:text="valleyresort@gmail.com"
+                android:textColor="#2b59a2"
+                android:textSize="@dimen/sp20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp20"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_update"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_btn"
+                    android:text="@string/update"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp16" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_delete"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dp4"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_btn"
+                    android:text="@string/delete"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp16" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Traveler.Questionnaire2Activity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp"
+        android:src="@drawable/ic_back" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginEnd="@dimen/dp20"
+        android:text="@string/questionnaire"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/sp26" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginEnd="@dimen/dp20"
+        android:text="@string/what_do_you_prefer"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp26" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginEnd="@dimen/dp20"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:background="@drawable/shape_image_questionnaire"
+            android:id="@+id/frame_questionnaire1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_questionnaire1"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_margin="@dimen/dp4"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_beach1" />
+        </FrameLayout>
+
+        <FrameLayout
+
+            android:id="@+id/frame_questionnaire2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_questionnaire2"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:scaleType="fitXY"
+                android:layout_margin="@dimen/dp4"
+                android:src="@drawable/image_beach2" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp20"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/frame_questionnaire3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_questionnaire3"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:scaleType="fitXY"
+                android:layout_margin="@dimen/dp4"
+                android:src="@drawable/image_beach3" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_questionnaire4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_questionnaire4"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_margin="@dimen/dp4"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_beach4" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp40"
+        android:layout_marginEnd="@dimen/dp20"
+        android:background="@drawable/shape_btn"
+        android:paddingStart="@dimen/dp40"
+        android:paddingTop="@dimen/dp10"
+        android:paddingEnd="@dimen/dp40"
+        android:paddingBottom="@dimen/dp10"
+        android:src="@drawable/ic_arrow_forward" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginStart="@dimen/dp50"
+        android:layout_marginEnd="@dimen/dp50"
+        android:src="@drawable/image_welcome1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp50"
+        android:layout_marginTop="@dimen/dp50"
+        android:layout_marginEnd="@dimen/dp50"
+        android:text="PLAN"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/sp28" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp50"
+        android:layout_marginTop="@dimen/dp50"
+        android:gravity="center"
+        android:layout_marginEnd="@dimen/dp50"
+        android:text="Get more clarity on your visit with an easy to use layout"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/sp28" />
+
+</LinearLayout>

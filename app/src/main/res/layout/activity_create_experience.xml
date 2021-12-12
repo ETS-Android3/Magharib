@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Host.CreateExperienceActivity">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp"
+        android:src="@drawable/ic_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp60"
+            android:layout_marginEnd="@dimen/dp60"
+            android:gravity="center"
+            android:text="@string/create_an_experience2"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/sp28" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_restaurants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp60"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginEnd="@dimen/dp60"
+            android:background="@drawable/shape_btn"
+            android:text="@string/restaurants_cafes"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp20" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_accommodations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp60"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginEnd="@dimen/dp60"
+            android:background="@drawable/shape_btn"
+            android:text="@string/accommodations"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp20" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_activities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp60"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginEnd="@dimen/dp60"
+            android:background="@drawable/shape_btn"
+            android:text="@string/activities"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp20" />
+    </LinearLayout>
+
+</LinearLayout>
